@@ -1,6 +1,5 @@
 import "./globals.css";
 import type { ReactNode } from "react";
-import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata = {
   title: "The Agent Family",
@@ -12,7 +11,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     <html lang="en">
       <body>
         {children}
-        <SpeedInsights />
       </body>
     </html>
   );
