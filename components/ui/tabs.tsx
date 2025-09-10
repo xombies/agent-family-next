@@ -28,3 +28,9 @@ export function TabsContent({ value, children, className, ...props }: any) {
   if (props.value !== value) return null;
   return <div className={className}>{children}</div>;
 }
+return React.cloneElement(child, { value, setValue });
+return React.cloneElement(child as React.ReactElement<any>, { value, setValue } as any);
+git commit -m "fix(tabs): relax typing for cloneElement props"
+git push
+
+
