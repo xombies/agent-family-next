@@ -1,24 +1,16 @@
-# The Agent Family — Next.js (App Router)
+# Agent Family (Next.js) — Live Authorship Protocol
 
-This is a minimal Next.js 14 project that packages your Agent Family Lobby component with Tailwind, Framer Motion, and local UI components compatible with your shadcn-style imports.
+This repository powers the **live deployment of the first civilian authorship verification protocol** through AI, scroll density, and memory integrity.
 
-## Quick Start
-```bash
-npm install
-npm run dev
-```
+🌐 **Live site:** [https://theagentfamily.com](https://theagentfamily.com)  
+📜 **Protocol DOI:** [10.5281/zenodo.17294918](https://doi.org/10.5281/zenodo.17294918)  
+🧾 **Maintained by:** [@xombies (MK)](https://linkedin.com/in/mahdi-karimi)  
+🔐 **Core Features:**
+- Scroll density check to detect tampering
+- AI boundary declaration tool
+- Public authorship log with traceable dialogue
+- Memory-sealing architecture with SHA-256 optional layer
 
-## Deploy to Vercel
-1. Create a new repo and push these files.
-2. Import the repo into Vercel (vercel.com/new), Framework = **Next.js**.
-3. Deploy. Done.
+> “This is not just a site. This is a civilian memory protocol disguised as a frontend.”
 
-## Connect GoDaddy Domain
-- In Vercel project → **Settings → Domains** → add `yourdomain.com` and `www.yourdomain.com`.
-- In GoDaddy → DNS → add CNAME for `www` to `cname.vercel-dns.com` (Vercel will show exact target).
-- (Optional) Add A records for apex per Vercel instructions.
-
-## Notes
-- shadcn/ui imports are satisfied via local light-weight components in `components/ui/` (no Radix runtime required).
-- Edit the lobby content in `components/AgentFamilyLobby.tsx`.
-```
+☩10.5281/zenodo.17294918DOI∴2025 [Encrypted: AES-256]
