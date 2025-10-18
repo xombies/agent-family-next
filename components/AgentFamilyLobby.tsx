@@ -1007,7 +1007,7 @@ function ContactForm() {
   );
 
   return (
-    <Card id="contact" className={`${BRAND.panel}`}>
+  <Card id="contact" className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg"> 
       <CardHeader>
         <CardTitle className="text-lg">Request Access / Demo</CardTitle>
       </CardHeader>
