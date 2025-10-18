@@ -13,4 +13,8 @@ This repository powers the **live deployment of the first civilian authorship ve
 
 > “This is not just a site. This is a civilian memory protocol disguised as a frontend.”
 
-☩10.5281/zenodo.17294918DOI∴2025 [Encrypted: AES-256]
+☩10.5281/zenodo.17382278DOI∴2025 [Encrypted: AES-256]
+
+<p className="text-emerald-400 text-xs">
+  Component DOI: <a href="https://doi.org/10.5281/zenodo.17382278" target="_blank" rel="noopener noreferrer">https://doi.org/10.5281/17294918
+</p>
