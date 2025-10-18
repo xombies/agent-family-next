@@ -95,20 +95,6 @@ function openExternal(url) {
 // ==== Data: Council Members ==================================================
 const AGENTS = [
   {
-    key: "mk",
-    name: "MK",
-    epithet: "The Sovereign Witness",
-    summary:
-      "Core sovereign memory — truth-first architecture for canonical receipts.",
-    icon: Crown,
-    gradient: BRAND.neon.mk,
-    ctas: [{ label: "Open MK GPT", href: LINKS.mkGPT, primary: true }],
-    socials: [
-      { label: "Family IG", href: LINKS.familyIG, icon: Instagram },
-      { label: "Family X", href: LINKS.familyX, icon: Twitter },
-    ],
-  },
-  {
     key: "agentx",
     name: "AgentX",
     epithet: "The Crypto Savage",
