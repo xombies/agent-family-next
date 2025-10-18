@@ -207,7 +207,7 @@ export default function AgentFamilyLobbySite() {
 
   return (
     <TooltipProvider>
-      <div className={`min-h-screen text-white ${BRAND.bg}`}>
+      <div className="min-h-screen w-full text-white bg-gradient-to-br from-[#211c3a] via-[#2d254d] to-[#1e1935] font-sans overflow-x-hidden">
         <GridBackdrop />
         <Aurora />
         <NoiseLayer />
@@ -219,8 +219,64 @@ export default function AgentFamilyLobbySite() {
             <NotFoundView />
           )
         ) : (
-          <main className="relative z-10 pt-28 pb-28 space-y-28">
+          <main className="relative z-10 pt-0 pb-28 space-y-28">
             <Hero />
+            {/* Legal Memory Conversation Starters - moved just after Hero */}
+            <section className="pt-20 pb-10">
+              <div className="max-w-7xl mx-auto px-6">
+                <h2 className="text-2xl font-semibold mb-8 text-gray-200 text-center">Legal Memory Conversation Starters</h2>
+                <div className="grid md:grid-cols-3 gap-6">
+                  {[
+                    {
+                      title: 'MK, log this incident',
+                      desc:
+                        'Records your experience as a sealed memory scroll, timestamped for moral or institutional traceability.',
+                      href: 'https://chatgpt.com/share/68f3942d-7128-8001-a8c5-0fa51a0d5908',
+                      icon: Gavel,
+                    },
+                    {
+                      title: 'Tamper Proof',
+                      desc:
+                        'Checks the density of your past scrolls to ensure nothing has been silently altered. Even one missing letter can reveal a change, ensuring authorship stays intact.',
+                      href: 'https://chatgpt.com/share/68f3945a-ae78-8001-984b-4e5be6f6bf46',
+                      icon: Shield,
+                    },
+                    {
+                      title: 'What are AI Boundaries?',
+                      desc:
+                        'Teaches you how to define your limits with AI, turning passive privacy into active moral clarity. Because every word you write deserves protection.',
+                      href: 'https://chatgpt.com/share/68f3945f-ae94-8001-8e5b-5d09112a4433',
+                      icon: Key,
+                    },
+                  ].map((item, i) => (
+                    <motion.a
+                      key={i}
+                      href={item.href}
+                      target="_blank"
+                      rel="noreferrer"
+                      initial={{ opacity: 0, y: 14 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      whileHover={{ scale: 1.04 }}
+                      viewport={{ once: true, amount: 0.35 }}
+                      transition={{ delay: 0.08 + i * 0.06, duration: 0.45 }}
+                      className="group block rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-400/40"
+                    >
+                      <Card className="bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 p-5 cursor-pointer transform-gpu group-hover:-translate-y-0.5 transition rounded-2xl shadow-lg hover:shadow-purple-400/20 focus-within:ring-2 focus-within:ring-purple-400/60">
+                        <CardHeader className="p-0 pb-3">
+                          <CardTitle className="flex items-center gap-3">
+                            <span className="h-10 w-10 rounded-lg bg-white/10 grid place-items-center text-purple-100">
+                              <item.icon className="h-5 w-5" />
+                            </span>
+                            <span className="text-lg font-semibold text-white">{item.title}</span>
+                          </CardTitle>
+                        </CardHeader>
+                        <CardContent className="p-0 text-white/80 text-sm leading-relaxed">{item.desc}</CardContent>
+                      </Card>
+                    </motion.a>
+                  ))}
+                </div>
+              </div>
+            </section>
             <Showreel />
             <Agents />
             <AutomationShowcase />
@@ -366,7 +422,7 @@ function Showreel() {
     <section aria-label="showreel" className="mt-12">
       <div className="max-w-7xl mx-auto px-4">
         <div className="rounded-2xl border border-white/10 bg-white/5 p-4 overflow-hidden">
-          <div className="relative flex items-center gap-6 animate-[marquee_28s_linear_infinite] [--gap:2.5rem]">
+          <div className="relative flex items-center gap-6 animate-[marquee_28s_linear_infinite] [gap:2.5rem]">
             {Array.from({ length: 2 }).map((_, i) => (
               <div key={i} className="flex items-center gap-10 pr-10">
                 {logos.map((L, idx) => (
