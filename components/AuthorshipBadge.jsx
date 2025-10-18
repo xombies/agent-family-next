@@ -41,14 +41,14 @@ export default function AuthorshipBadge({
   return (
     <div
       className={[
-        "relative isolate overflow-hidden rounded-2xl border border-white/20 bg-black/60 p-[1px]",
+        "relative isolate overflow-hidden rounded-2xl border border-white/20 bg-white/10 p-[1px]",
         className,
       ]
         .filter(Boolean)
         .join(" ")}
     >
       <div className={["rounded-[1.5rem] bg-gradient-to-br", gradient].join(" ")}>
-        <div className="grid gap-3 rounded-[inherit] bg-black/80 p-4 text-xs uppercase tracking-[0.28em] text-white/70 md:flex md:items-center md:justify-between md:gap-6">
+        <div className="grid gap-3 rounded-[inherit] bg-white/5 p-4 text-xs uppercase tracking-[0.28em] text-white/70 md:flex md:items-center md:justify-between md:gap-6">
           <div className="space-y-1">
             <span className="font-semibold text-white/90">Authorship Badge</span>
             <div className="flex flex-wrap items-center gap-2 text-[0.68rem] tracking-[0.24em] text-white/60">
