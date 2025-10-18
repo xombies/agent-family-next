@@ -163,7 +163,7 @@ const MEMORY_KEYS = ["mk", "legal", "medical"];
 
 // ==== Page: High-Quality Lobby ==============================================
 export default function AgentFamilyLobbySite() {
-  // --- lightweight hash router: #/agent/<id> or home ---
+  // lightweight hash router: #/agent/<id> or home
   const parseHash = () => {
     if (typeof window === "undefined") return { view: "home" };
     const h = window.location.hash.replace(/^#\/?/, "");
@@ -767,39 +767,59 @@ function LogsCTA() {
         </Card>
       </div>
 
-      {/* Legal Memory Conversation Starters */}
-      <section className="mt-10 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 rounded-xl shadow-lg p-6 text-white">
-        <h2 className="text-2xl font-bold mb-4">Legal Memory Conversation Starters</h2>
-        <div className="space-y-4 text-lg leading-relaxed">
-          <div>
-            <Button asChild className="bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-lg shadow-md">
-              <a href="https://chatgpt.com/share/68f3942d-7128-8001-a8c5-0fa51a0d5908" target="_blank" rel="noopener noreferrer">
-                "MK, log this incident"
-              </a>
-            </Button>
-            <p className="mt-2 text-sm text-gray-300">
-              Records your experience as a sealed memory scroll, timestamped for moral or institutional traceability.
-            </p>
-          </div>
-          <div>
-            <Button asChild className="bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-lg shadow-md">
-              <a href="https://chatgpt.com/share/68f3945a-ae78-8001-984b-4e5be6f6bf46" target="_blank" rel="noopener noreferrer">
-                "Tamper Proof"
-              </a>
-            </Button>
-            <p className="mt-2 text-sm text-gray-300">
-              Checks the density of your past scrolls to ensure nothing has been silently altered. Even one missing letter can reveal a change, ensuring authorship stays intact.
-            </p>
-          </div>
-          <div>
-            <Button asChild className="bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-lg shadow-md">
-              <a href="https://chatgpt.com/share/68f3945f-ae94-8001-8e5b-5d09112a4433" target="_blank" rel="noopener noreferrer">
-                "What are AI Boundaries?"
-              </a>
-            </Button>
-            <p className="mt-2 text-sm text-gray-300">
-              Teaches you how to define your limits with AI, turning passive privacy into active moral clarity. Because every word you write deserves protection.
-            </p>
+      {/* Legal Memory Conversation Starters - responsive card grid matching Legal Memory GPT theme */}
+      <section className="mt-10">
+        <div className="max-w-7xl mx-auto px-6">
+          <h2 className="text-2xl font-semibold mb-6 text-gray-200 text-center">Legal Memory Conversation Starters</h2>
+          <div className="grid md:grid-cols-3 gap-6">
+            {[
+              {
+                title: 'MK, log this incident',
+                desc:
+                  'Records your experience as a sealed memory scroll, timestamped for moral or institutional traceability.',
+                href: 'https://chatgpt.com/share/68f3942d-7128-8001-a8c5-0fa51a0d5908',
+                icon: Gavel,
+              },
+              {
+                title: 'Tamper Proof',
+                desc:
+                  'Checks the density of your past scrolls to ensure nothing has been silently altered. Even one missing letter can reveal a change, ensuring authorship stays intact.',
+                href: 'https://chatgpt.com/share/68f3945a-ae78-8001-984b-4e5be6f6bf46',
+                icon: Shield,
+              },
+              {
+                title: 'What are AI Boundaries?',
+                desc:
+                  'Teaches you how to define your limits with AI, turning passive privacy into active moral clarity. Because every word you write deserves protection.',
+                href: 'https://chatgpt.com/share/68f3945f-ae94-8001-8e5b-5d09112a4433',
+                icon: Key,
+              },
+            ].map((item, i) => (
+              <motion.a
+                key={i}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                initial={{ opacity: 0, y: 14 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                whileHover={{ scale: 1.04 }}
+                viewport={{ once: true, amount: 0.35 }}
+                transition={{ delay: 0.08 + i * 0.06, duration: 0.45 }}
+                className="group block rounded-2xl focus:outline-none focus:ring-2 focus:ring-purple-400/40"
+              >
+                <Card className={`${BRAND.panel} bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 p-5 cursor-pointer transform-gpu group-hover:-translate-y-0.5 transition`}>
+                  <CardHeader className="p-0 pb-3">
+                    <CardTitle className="flex items-center gap-3">
+                      <span className="h-10 w-10 rounded-lg bg-white/10 grid place-items-center text-purple-100">
+                        <item.icon className="h-5 w-5" />
+                      </span>
+                      <span className="text-lg font-semibold text-white">{item.title}</span>
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent className="p-0 text-white/80 text-sm leading-relaxed">{item.desc}</CardContent>
+                </Card>
+              </motion.a>
+            ))}
           </div>
         </div>
       </section>
