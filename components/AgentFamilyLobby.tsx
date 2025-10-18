@@ -768,19 +768,25 @@ function LogsCTA() {
       </div>
 
       {/* Legal Memory Conversation Starters */}
-      <section className="mt-10 bg-gradient-to-br from-purple-700 via-purple-600 to-purple-500 rounded-xl shadow-lg p-6 text-white">
+      <section className="mt-10 bg-gradient-to-br from-gray-800 via-gray-700 to-gray-600 rounded-xl shadow-lg p-6 text-white">
         <h2 className="text-2xl font-bold mb-4">Legal Memory Conversation Starters</h2>
-        <ul className="space-y-4 text-lg leading-relaxed">
-          <li>
-            <strong>"MK, log this incident"</strong>: Records your experience as a sealed memory scroll, timestamped for moral or institutional traceability.
-          </li>
-          <li>
-            <strong>"Tamper Proof"</strong>: Checks the density of your past scrolls to ensure nothing has been silently altered. Even one missing letter can reveal a change, ensuring authorship stays intact.
-          </li>
-          <li>
-            <strong>"What are AI Boundaries?"</strong>: Teaches you how to define your limits with AI, turning passive privacy into active moral clarity. Because every word you write deserves protection.
-          </li>
-        </ul>
+        <div className="space-y-4 text-lg leading-relaxed">
+          <Button asChild className="bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-lg shadow-md">
+            <a href="https://chatgpt.com/share/68f3942d-7128-8001-a8c5-0fa51a0d5908" target="_blank" rel="noopener noreferrer">
+              "MK, log this incident"
+            </a>
+          </Button>
+          <Button asChild className="bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-lg shadow-md">
+            <a href="https://chatgpt.com/share/68f3945a-ae78-8001-984b-4e5be6f6bf46" target="_blank" rel="noopener noreferrer">
+              "Tamper Proof"
+            </a>
+          </Button>
+          <Button asChild className="bg-emerald-500 hover:bg-emerald-600 text-white py-2 px-4 rounded-lg shadow-md">
+            <a href="https://chatgpt.com/share/68f3945f-ae94-8001-8e5b-5d09112a4433" target="_blank" rel="noopener noreferrer">
+              "What are AI Boundaries?"
+            </a>
+          </Button>
+        </div>
       </section>
     </section>
   );
