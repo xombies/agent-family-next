@@ -1007,7 +1007,7 @@ function ContactForm() {
   );
 
   return (
-  <Card id="contact" className="bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl shadow-lg"> 
+  <Card id="contact" className="bg-gradient-to-br from-indigo-900/40 to-purple-900/40 border border-indigo-700/30 rounded-2xl shadow-md"> 
       <CardHeader>
         <CardTitle className="text-lg">Request Access / Demo</CardTitle>
       </CardHeader>
