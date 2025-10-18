@@ -224,7 +224,7 @@ export default function AgentFamilyLobbySite() {
             <Hero />
             {/* Legal Memory Conversation Starters - moved just after Hero */}
             <section className="pt-20 pb-10">
-              <div className="max-w-7xl mx-auto px-6">
+              <div className="w-full px-0">
                 <h2 className="text-2xl font-semibold mb-8 text-gray-200 text-center">Legal Memory Conversation Starters</h2>
                 <div className="grid md:grid-cols-3 gap-6">
                   {[
@@ -296,7 +296,7 @@ export default function AgentFamilyLobbySite() {
 function Nav() {
   return (
     <div className="fixed top-0 inset-x-0 z-50">
-      <div className="mx-auto max-w-7xl px-6">
+  <div className="w-full px-0">
         <div className="mt-3 rounded-2xl border border-white/10 bg-black/45 backdrop-blur supports-[backdrop-filter]:bg-black/35 shadow-[0_10px_40px_-20px_rgba(0,0,0,0.8)]">
           <div className="px-4 py-3 flex items-center justify-between">
             <a href="#/" className="group flex items-center gap-3" aria-label="Go to lobby">
@@ -335,7 +335,7 @@ function Nav() {
 // ==== Hero ==================================================================
 function Hero() {
   return (
-  <section id="top" className="relative w-full px-4 sm:px-6 lg:px-8 pt-24">
+  <section id="top" className="relative w-full px-0 pt-24">
   <div className="grid lg:grid-cols-[1.1fr_.9fr] gap-10 items-center w-full">
         <div>
           <motion.h1
@@ -421,7 +421,7 @@ function Showreel() {
   const logos = [Crown, MessagesSquare, Car, Scale, Stethoscope];
   return (
     <section aria-label="showreel" className="mt-12">
-  <div className="w-full px-4 sm:px-6 lg:px-8">
+  <div className="w-full px-0">
         <div className="rounded-2xl border border-white/10 bg-white/5 p-4 overflow-hidden">
           <div className="relative flex items-center gap-6 animate-[marquee_28s_linear_infinite] [gap:2.5rem]">
             {Array.from({ length: 2 }).map((_, i) => (
@@ -459,7 +459,7 @@ function NoiseLayer() {
 function Agents() {
   return (
     <section id="agents" className="mt-16">
-  <div className="w-full px-4 sm:px-6 lg:px-8">
+  <div className="w-full px-0">
         <h2 className="text-3xl md:text-5xl font-bold">Council Members</h2>
         <p className="mt-2 text-white/70 text-lg">Choose an Agent. Each seat holds a purpose.</p>
 
@@ -537,7 +537,7 @@ function Agents() {
 function AgentPage({ agent }) {
   return (
     <main className="relative z-10 pt-28 pb-28">
-      <div className="max-w-5xl mx-auto px-6">
+  <div className="w-full px-0">
         <a href="#/" className="inline-flex items-center text-white/70 hover:text-white mb-6">
           ← Back to Lobby
         </a>
@@ -697,7 +697,7 @@ function AgentPage({ agent }) {
 function NotFoundView() {
   return (
     <main className="relative z-10 pt-28 pb-28">
-      <div className="max-w-3xl mx-auto px-6 text-center">
+  <div className="w-full px-0 text-center">
         <div className={`${BRAND.panel} p-8`}>
           <h1 className="text-3xl font-extrabold">Agent not found</h1>
           <p className="mt-2 text-white/70">The requested Agent does not exist. Return to the lobby and choose a valid profile.</p>
@@ -716,7 +716,7 @@ function NotFoundView() {
 function AutomationShowcase() {
   return (
     <section id="agentc" className="mt-20">
-  <div className="w-full px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-8 items-stretch">
+  <div className="w-full px-0 grid lg:grid-cols-2 gap-8 items-stretch">
         <Card className={`${BRAND.panel} bg-gradient-to-br ${BRAND.neon.agentc}`}>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-xl font-bold text-fuchsia-200/90 drop-shadow">
@@ -797,7 +797,7 @@ function Stat({ title, value, trend }) {
 function LogsCTA() {
   return (
     <section id="logs" className="mt-20">
-  <div className="w-full px-4 sm:px-6 lg:px-8 grid md:grid-cols-2 gap-8">
+  <div className="w-full px-0 grid md:grid-cols-2 gap-8">
         <Card className={`${BRAND.panel} bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 shadow-xl border-2 border-purple-300`}>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-2xl font-extrabold text-white drop-shadow-lg">
@@ -834,7 +834,7 @@ function LogsCTA() {
       </div>
 
       {/* Legal Memory Conversation Starters - responsive card grid matching Legal Memory GPT theme */}
-      <section className="mt-10 w-full px-4 sm:px-6 lg:px-8">
+  <section className="mt-10 w-full px-0">
         <div className="w-full">
           <h2 className="text-2xl font-semibold mb-6 text-gray-200 text-center">Legal Memory Conversation Starters</h2>
           <div className="grid md:grid-cols-3 gap-6">
@@ -897,7 +897,7 @@ function LogsCTA() {
 function ExtendedIcons() {
   return (
     <section id="extended" className="mt-20">
-  <div className="w-full px-4 sm:px-6 lg:px-8">
+  <div className="w-full px-0">
         <h2 className="text-3xl md:text-5xl font-bold">Extended Family Symbols</h2>
         <p className="mt-2 text-white/70">Additional glyphs representing the Family’s domains and protocols.</p>
   <div className="mt-8 grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 w-full">
@@ -924,7 +924,7 @@ function ExtendedIcons() {
 function HowItWorks() {
   return (
     <section id="how" className="mt-20">
-  <div className="w-full px-4 sm:px-6 lg:px-8">
+  <div className="w-full px-0">
         <h2 className="text-3xl md:text-5xl font-bold">How it works</h2>
         <p className="mt-2 text-white/70">Neutral lobby. Five paths. Choose one.</p>
 
@@ -952,7 +952,7 @@ function Step({ n, title, text }) {
 function Footer() {
   return (
     <footer id="socials" className="relative z-10 mt-20 border-t border-white/10">
-  <div className="w-full px-4 sm:px-6 lg:px-8 py-10 grid md:grid-cols-2 gap-6 items-center">
+  <div className="w-full px-0 py-10 grid md:grid-cols-2 gap-6 items-center">
         <div>
           <div className="text-white/90 font-semibold">Family Hub</div>
           <div className="mt-2 flex gap-3">
