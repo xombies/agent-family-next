@@ -9,7 +9,7 @@ export default function Page() {
     <main className="flex flex-col items-center justify-center min-h-screen">
       <AgentFamilyLobby />
       <footer className="mt-10">
-        <AuthorshipBadge issuedAt="2025-10-17" />
+        <AuthorshipBadge issuedAt="2025-10-17" checksum="example-checksum-value" />
       </footer>
     </main>
   );
