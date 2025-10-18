@@ -858,6 +858,20 @@ function Footer() {
             </Button>
           </div>
           <div className="mt-6 text-xs text-white/50">© {new Date().getFullYear()} The Agent Family. All rights reserved.</div>
+          {/* Authorship Verification */}
+          <div className="mt-3">
+            <div className="text-xs text-white/60">
+              Verified Authorship — DOI:
+              <a
+                href="https://doi.org/10.5281/zenodo.17294918"
+                target="_blank"
+                rel="noreferrer"
+                className="text-cyan-400 hover:text-emerald-300 ml-1 underline"
+              >
+                10.5281/zenodo.17294918
+              </a>
+            </div>
+          </div>
         </div>
         <ContactForm />
       </div>
