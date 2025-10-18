@@ -1057,3 +1057,18 @@ function AgentHeadSVG({ className }) {
     try { console.warn("devSmoke failed:", e); } catch (_) {}
   }
 })();
+
+<section className="mt-10 bg-gradient-to-br from-purple-700 via-purple-600 to-purple-500 rounded-xl shadow-lg p-6 text-white">
+  <h2 className="text-2xl font-bold mb-4">Legal Memory Conversation Starters</h2>
+  <ul className="space-y-4 text-lg leading-relaxed">
+    <li>
+      <strong>"MK, log this incident"</strong>: Records your experience as a sealed memory scroll, timestamped for moral or institutional traceability.
+    </li>
+    <li>
+      <strong>"Tamper Proof"</strong>: Checks the density of your past scrolls to ensure nothing has been silently altered. Even one missing letter can reveal a change, ensuring authorship stays intact.
+    </li>
+    <li>
+      <strong>"What are AI Boundaries?"</strong>: Teaches you how to define your limits with AI, turning passive privacy into active moral clarity. Because every word you write deserves protection.
+    </li>
+  </ul>
+</section>
