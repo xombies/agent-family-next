@@ -24,6 +24,7 @@ import {
   Shield,
   Link2 as ChainLinkIcon,
 } from "lucide-react";
+import AgentMCard from "@/components/agents/AgentMCard";
 
 // shadcn/ui components
 import { Button } from "@/components/ui/button";
@@ -517,6 +518,15 @@ function Agents() {
               </Card>
             </motion.div>
           ))}
+          {/* AgentM donation card — styled to match other council cards */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ delay: AGENTS.length * 0.08 }}
+          >
+            <AgentMCard />
+          </motion.div>
         </div>
       </div>
     </section>
