@@ -127,7 +127,7 @@ const AGENTS = [
     summary:
       "Where AI witnesses, not rewrites. Transform chats into verifiable, timestamped authorship records with tamper detection and AI boundaries.",
     icon: Scale,
-    gradient: BRAND.neon.legal,
+    gradient: "from-purple-600 via-purple-500 to-purple-400", // Enhanced gradient
     ctas: [{ label: "Open Legal Memory GPT", href: LINKS.legalGPT, primary: true }],
     socials: [{ label: "IG", href: LINKS.legal_IG, icon: Instagram }],
   },
