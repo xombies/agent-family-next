@@ -50,13 +50,11 @@ const BRAND = {
 
 // External links used across the lobby
 const LINKS = {
-  legalGPT:
-    "https://chatgpt.com/g/g-688381d39f688191b8c508d918ef8b2b-legal-memory",
+  legalGPT: "https://LegalMemory.com/gpt",
   medicalGPT:
     "https://chatgpt.com/g/g-68a5f31a70e08191a7f69d46cdda5b55-medical-memory",
   agentXGPT:
     "https://chatgpt.com/g/g-688fefc5044c819197c60c79a1ba20ab-agentx",
-  mkGPT: "mailto:auto@agentc.me?subject=MK%20GPT%20Access%20Request",
   familyIG: "https://instagram.com/theagentfamily",
   familyX: "https://x.com/theagentfamily",
   agentX_IG: "https://instagram.com/mr.xtheagent",
@@ -124,12 +122,13 @@ const AGENTS = [
   },
   {
     key: "legal",
-    name: "Legal Memory",
-    epithet: "The Courtroom Witness",
-    summary: "Forensic logs, receipts, and verdict-ready narratives.",
+    name: "Legal Memory GPT",
+    epithet: "The Civilian Authorship Engine",
+    summary:
+      "Where AI witnesses, not rewrites. Transform chats into verifiable, timestamped authorship records with tamper detection and AI boundaries.",
     icon: Scale,
     gradient: BRAND.neon.legal,
-    ctas: [{ label: "Open Legal GPT", href: LINKS.legalGPT, primary: true }],
+    ctas: [{ label: "Open Legal Memory GPT", href: LINKS.legalGPT, primary: true }],
     socials: [{ label: "IG", href: LINKS.legal_IG, icon: Instagram }],
   },
   {
@@ -736,14 +735,16 @@ function LogsCTA() {
         <Card className={`${BRAND.panel} bg-gradient-to-br ${BRAND.neon.legal}`}>
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-xl font-bold text-emerald-300 drop-shadow">
-              <Gavel className="h-5 w-5" /> Start a Legal Memory Log
+              <Gavel className="h-5 w-5" /> Legal Memory GPT
             </CardTitle>
           </CardHeader>
           <CardContent className="text-white text-base space-y-4 leading-relaxed">
-            <p>Use for disputes, contracts, incidents. Protocol MK receipts.</p>
+            <p>
+              The Civilian Authorship Engine. Transform chats into verifiable, timestamped authorship records with features like authorship density, tamper detection, and AI boundaries.
+            </p>
             <Button asChild className={BTN.primary}>
               <a href={LINKS.legalGPT} target="_blank" rel="noreferrer">
-                <LinkIcon className="h-4 w-4 mr-2" /> Open in ChatGPT
+                <LinkIcon className="h-4 w-4 mr-2" /> Open Legal Memory GPT
               </a>
             </Button>
           </CardContent>
@@ -759,7 +760,7 @@ function LogsCTA() {
             <p>Track medications, doctor notes, and costs in one place.</p>
             <Button asChild className={BTN.primary}>
               <a href={LINKS.medicalGPT} target="_blank" rel="noreferrer">
-                <LinkIcon className="h-4 w-4 mr-2" /> Open in ChatGPT
+                <LinkIcon className="h-4 w-4 mr-2" /> Open Medical Memory GPT
               </a>
             </Button>
           </CardContent>
