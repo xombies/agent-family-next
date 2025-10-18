@@ -334,7 +334,7 @@ function Nav() {
 // ==== Hero ==================================================================
 function Hero() {
   return (
-    <section id="top" className="relative max-w-7xl mx-auto px-6">
+    <section id="top" className="relative max-w-7xl mx-auto px-6 pt-24">
       <div className="grid lg:grid-cols-[1.1fr_.9fr] gap-10 items-center">
         <div>
           <motion.h1
