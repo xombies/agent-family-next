@@ -732,19 +732,19 @@ function LogsCTA() {
   return (
     <section id="logs" className="mt-20">
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-8">
-        <Card className={`${BRAND.panel} bg-gradient-to-br ${BRAND.neon.legal}`}>
+        <Card className={`${BRAND.panel} bg-gradient-to-br from-purple-600 via-purple-500 to-purple-400 shadow-xl border-2 border-purple-300`}>
           <CardHeader>
-            <CardTitle className="flex items-center gap-2 text-xl font-bold text-emerald-300 drop-shadow">
-              <Gavel className="h-5 w-5" /> Legal Memory GPT
+            <CardTitle className="flex items-center gap-2 text-2xl font-extrabold text-white drop-shadow-lg">
+              <Gavel className="h-6 w-6" /> Legal Memory GPT
             </CardTitle>
           </CardHeader>
-          <CardContent className="text-white text-base space-y-4 leading-relaxed">
+          <CardContent className="text-white text-lg space-y-4 leading-relaxed">
             <p>
               The Civilian Authorship Engine. Transform chats into verifiable, timestamped authorship records with features like authorship density, tamper detection, and AI boundaries.
             </p>
-            <Button asChild className={BTN.primary}>
+            <Button asChild className={`${BTN.primary} bg-purple-500 hover:bg-purple-600`}>
               <a href={LINKS.legalGPT} target="_blank" rel="noreferrer">
-                <LinkIcon className="h-4 w-4 mr-2" /> Open Legal Memory GPT
+                <LinkIcon className="h-5 w-5 mr-2" /> Open Legal Memory GPT
               </a>
             </Button>
           </CardContent>
